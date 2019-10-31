@@ -146,7 +146,7 @@ export default class ServerlessRollupPlugin implements Plugin {
         output: {
           file: path.join(input.destination, `index.js`),
           format: "cjs",
-          sourcemap: true
+          sourcemap: false
         },
         ...this.rollupConfig
       } as rollup.RollupOptions;
